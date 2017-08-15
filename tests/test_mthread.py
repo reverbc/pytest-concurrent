@@ -31,8 +31,5 @@ def test_multithread(testdir):
         '*.py:*: AssertionError'
     ])
 
-    print("end")
-
     time_diff = after_run - before_run
-    # assert time_diff > 4 and time_diff < 6
     assert time_diff > 4 and time_diff < 8
