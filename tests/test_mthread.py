@@ -1,7 +1,4 @@
 import time
-import pytest
-
-pytest.register_assert_rewrite('../pytest_concurrent')
 
 
 def test_multithread(testdir):
