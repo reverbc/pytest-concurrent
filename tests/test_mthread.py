@@ -28,8 +28,7 @@ def test_multithread(testdir):
 
     # fnmatch_lines does an assertion internally
     result.stdout.fnmatch_lines([
-        # '*.py:*: ZeroDivisionError',
-        # '*.py:*: AssertionError'
+        '*.py:*: AssertionError'
     ])
 
     print("end")
