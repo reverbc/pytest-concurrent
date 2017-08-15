@@ -90,8 +90,9 @@ def pytest_runtestloop(session):
         workers = int(workers_raw) if workers_raw else None
 
         # backport max worker: https://github.com/python/cpython/blob/3.5/Lib/concurrent/futures/thread.py#L91-L94
-        cpu_counter = psutil
-        workers = (cpu_counter.cpu_count() or 1) * 5
+        if workers is None:
+            cpu_counter = psutil
+            workers = (cpu_counter.cpu_count() or 1) * 5
     except ValueError:
         raise ValueError('Concurrent workers can only be integer.')
 
