@@ -71,3 +71,8 @@ target/
 # pyenv
 .python-version
 
+.idea/
+.vscode/
+.mypy_cache/
+.ropeproject/
+.pytest_cache/
