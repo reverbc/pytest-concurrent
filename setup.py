@@ -13,7 +13,7 @@ def read(fname):
 
 setup(
     name='pytest-concurrent',
-    version='0.1.2',
+    version='0.2.0',
     author='James Wang, Reverb Chu',
     author_email='jamesw96@uw.edu, reverbc@me.com',
     maintainer='James Wang, Reverb Chu',
@@ -23,7 +23,7 @@ setup(
     description='Concurrently execute test cases with multithread'
                 ', multiprocess and gevent',
     long_description=read('README.rst'),
-    py_modules=['pytest_concurrent'],
+    packages=['pytest_concurrent', 'pytest_concurrent.modes'],
     install_requires=[
         'pytest>=3.1.1',
         'futures;python_version<"3.0"',
@@ -37,7 +37,6 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
@@ -47,7 +46,7 @@ setup(
     ],
     entry_points={
         'pytest11': [
-            'concurrent = pytest_concurrent',
+            'concurrent = pytest_concurrent.plugin',
         ],
     },
     setup_requires=['pytest-runner'],
