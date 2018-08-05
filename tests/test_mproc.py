@@ -1,7 +1,10 @@
 import time
+import sys
+import pytest
 
 
-def test_multithread(testdir):
+@pytest.mark.skipif(sys.platform == 'win32', reason='mproc does not support Windows platform')
+def test_multiprocess(testdir):
     """Make sure that pytest accepts our fixture."""
 
     # create a temporary pytest test module
@@ -20,7 +23,7 @@ def test_multithread(testdir):
     """)
 
     before_run = time.time()
-    result = testdir.runpytest('--concmode=mthread', '--concworkers=2')
+    result = testdir.runpytest('--concmode=mproc', '--concworkers=2')
     after_run = time.time()
 
     # fnmatch_lines does an assertion internally

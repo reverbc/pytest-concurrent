@@ -37,8 +37,8 @@ Features
 Requirements
 ------------
 
-* Python version [2.7 +]
-* Python3 version [3.3 +]
+* Python2 version [2.7.*]
+* Python3 version [3.4+]
 * Make sure you have the latest version of pytest installed for your environment
 
 
@@ -84,4 +84,3 @@ If you encounter any problems, please `file an issue`_ along with a detailed des
 .. _`tox`: https://tox.readthedocs.io/en/latest/
 .. _`pip`: https://pypi.python.org/pypi/pip/
 .. _`PyPI`: https://pypi.python.org/pypi
-
