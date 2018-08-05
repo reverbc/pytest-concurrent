@@ -38,7 +38,7 @@ Features
 Requirements
 ------------
 
-* Python version [2.7+]
+* Python2 version [2.7.*]
 * Python3 version [3.4+]
 * Make sure you have the latest version of pytest installed for your environment
 
