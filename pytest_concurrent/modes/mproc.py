@@ -141,9 +141,7 @@ class ConcurrentLogXML(LogXML):
         suite_stop_time = time.time()
         suite_time_delta = suite_stop_time - self.suite_start_time
 
-        numtests = (self.stats['passed'] + self.stats['failure'] +
-                    self.stats['skipped'] + self.stats['error'] -
-                    self.cnt_double_fail_tests)
+        numtests = (self.stats['passed'] + self.stats['failure'] + self.stats['skipped'] + self.stats['error'] - self.cnt_double_fail_tests)
         # print("NODE REPORTS: " + str(NODEREPORTS))
         logfile.write('<?xml version="1.0" encoding="utf-8"?>')
         logfile.write(Junit.testsuite(

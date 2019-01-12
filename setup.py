@@ -13,11 +13,11 @@ def read(fname):
 
 setup(
     name='pytest-concurrent',
-    version='0.2.1',
+    version='0.2.2',
     author='James Wang, Reverb Chu',
-    author_email='jamesw96@uw.edu, reverbc@me.com',
+    author_email='jamesw96@uw.edu, reverbcsc@gmail.com',
     maintainer='James Wang, Reverb Chu',
-    maintainer_email='jamesw96@uw.edu, reverbc@me.com',
+    maintainer_email='jamesw96@uw.edu, reverbcsc@gmail.com',
     license='MIT',
     url='https://github.com/reverbc/pytest-concurrent',
     description='Concurrently execute test cases with multithread'
@@ -26,7 +26,6 @@ setup(
     packages=['pytest_concurrent', 'pytest_concurrent.modes'],
     install_requires=[
         'pytest>=3.1.1',
-        'futures;python_version<"3.0"',
         'psutil>=5.2.2'],
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -34,8 +33,6 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Testing',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
