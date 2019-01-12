@@ -13,11 +13,11 @@ def read(fname):
 
 setup(
     name='pytest-concurrent',
-    version='0.2.1',
+    version='0.2.2',
     author='James Wang, Reverb Chu',
-    author_email='jamesw96@uw.edu, reverbc@me.com',
+    author_email='jamesw96@uw.edu, reverbcsc@gmail.com',
     maintainer='James Wang, Reverb Chu',
-    maintainer_email='jamesw96@uw.edu, reverbc@me.com',
+    maintainer_email='jamesw96@uw.edu, reverbcsc@gmail.com',
     license='MIT',
     url='https://github.com/reverbc/pytest-concurrent',
     description='Concurrently execute test cases with multithread'
