@@ -31,8 +31,7 @@ def pytest_addoption(parser):
 
 def pytest_runtestloop(session):
     '''Initialize a single test session'''
-    if (session.testsfailed and
-            not session.config.option.continue_on_collection_errors):
+    if (session.testsfailed and not session.config.option.continue_on_collection_errors):
         raise session.Interrupted(
             "%d errors during collection" % session.testsfailed)
 
