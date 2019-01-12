@@ -64,7 +64,7 @@ def pytest_runtestloop(session):
     groups = collections.defaultdict(list)
     ungrouped_items = list()
     for item in session.items:
-        concurrent_group_marker = item.get_marker('concgroup')
+        concurrent_group_marker = item.get_closest_marker('concgroup')
         concurrent_group = None
 
         if concurrent_group_marker is not None:
