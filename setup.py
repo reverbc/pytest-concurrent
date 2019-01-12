@@ -26,7 +26,6 @@ setup(
     packages=['pytest_concurrent', 'pytest_concurrent.modes'],
     install_requires=[
         'pytest>=3.1.1',
-        'futures;python_version<"3.0"',
         'psutil>=5.2.2'],
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -34,8 +33,6 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Testing',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
