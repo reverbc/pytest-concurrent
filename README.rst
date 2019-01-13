@@ -13,7 +13,7 @@ pytest-concurrent
     :target: https://travis-ci.org/reverbc/pytest-concurrent
     :alt: See Build Status on Travis CI
 
-.. image:: https://ci.appveyor.com/api/projects/status/github/reverbc/pytest-concurrent?branch=master&svg=true
+.. image:: https://ci.appveyor.com/api/projects/status/66752as6ai1v85re/branch/master?svg=true
     :target: https://ci.appveyor.com/project/reverbc/pytest-concurrent/branch/master
     :alt: See Build Status on AppVeyor
    
