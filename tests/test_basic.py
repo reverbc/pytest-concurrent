@@ -50,7 +50,7 @@ def test_ini_setting(testdir):
 
     # fnmatch_lines does an assertion internally
     result.stdout.fnmatch_lines([
-        '*= 2 passed in * seconds =*'
+        '*= 2 passed in *s =*'
     ])
 
     # make sure that that we get a '0' exit code for the testsuite
